@@ -1,0 +1,17 @@
+{% assign research = site.data.data.research %}
+{% if research %}
+<section class="section" id="research">
+  <h2 class="section-title">Research</h2>
+  {% if research.intro %}<div class="section-intro">{{ research.intro | markdownify }}</div>{% endif %}
+
+  <div class="research-grid">
+    {% for thrust in research.thrusts %}
+    <div class="research-card">
+      <h3 class="research-card-title">{{ thrust.title }}</h3>
+      {% if thrust.tagline %}<p class="research-card-tagline">{{ thrust.tagline }}</p>{% endif %}
+      <div class="research-card-body">{{ thrust.body | markdownify }}</div>
+    </div>
+    {% endfor %}
+  </div>
+</section>
+{% endif %}

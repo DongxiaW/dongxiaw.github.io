@@ -1,0 +1,35 @@
+{% assign p = site.data.data.profile %}
+<header class="header" id="top">
+  <span id="about"></span>
+  <div class="header-grid">
+    <div class="header-photo">
+      <img src="{{ site.baseurl }}/assets/images/{{ p.avatar }}" alt="{{ p.name }}">
+    </div>
+    <div class="header-intro">
+      <h1 class="header-name">
+        {{ p.name }}{% if p.chinese_name %} <span class="header-cn">{{ p.chinese_name }}</span>{% endif %}
+        {% if p.lab_logo %}<img class="name-lab-logo" src="{{ site.baseurl }}/assets/images/{{ p.lab_logo }}" alt="{{ p.lab }} logo">{% endif %}
+      </h1>
+      {% if p.title %}<p class="header-title">{{ p.title }}</p>{% endif %}
+      {% if p.subtitle %}<p class="header-subtitle">{{ p.subtitle }}</p>{% endif %}
+      {% if p.lab %}<p class="header-lab"><span class="lab-name">{{ p.lab }}</span>{% if p.lab_full %} &mdash; {{ p.lab_full }}{% endif %}</p>{% endif %}
+      {% if p.lab_tagline %}<p class="header-lab-tagline">{{ p.lab_tagline }}</p>{% endif %}
+
+      <ul class="social">
+        {% if p.scholar %}<li><a href="{{ p.scholar }}" target="_blank" rel="noopener" title="Google Scholar"><i class="fas fa-graduation-cap"></i></a></li>{% endif %}
+        {% if p.github %}<li><a href="{{ p.github }}" target="_blank" rel="noopener" title="GitHub"><i class="fab fa-github"></i></a></li>{% endif %}
+        {% if p.linkedin %}<li><a href="{{ p.linkedin }}" target="_blank" rel="noopener" title="LinkedIn"><i class="fab fa-linkedin"></i></a></li>{% endif %}
+        {% if p.twitter %}<li><a href="{{ p.twitter }}" target="_blank" rel="noopener" title="X / Twitter"><i class="fab fa-x-twitter"></i></a></li>{% endif %}
+        {% if p.cv %}<li><a href="{{ p.cv }}" target="_blank" rel="noopener" class="social-cv" title="Curriculum Vitae">CV</a></li>{% endif %}
+      </ul>
+
+      {% if p.email_display %}<p class="header-email">{{ p.email_display }}</p>{% endif %}
+    </div>
+  </div>
+
+  {% if site.data.data.bio %}
+  <div class="bio">
+    {{ site.data.data.bio | markdownify }}
+  </div>
+  {% endif %}
+</header>

@@ -1,32 +1,47 @@
-{% assign publications = site.data.data.publications %}
-{% if publications %}
-<section class="section publications-section">
+{% assign pubs = site.data.data.publications.papers %}
+{% if pubs %}
+<section class="section" id="publications">
+  <h2 class="section-title">Publications</h2>
+  <p class="section-note">For a full and up-to-date list, see my
+    {% if site.data.data.profile.scholar %}<a href="{{ site.data.data.profile.scholar }}" target="_blank" rel="noopener">Google Scholar</a>{% else %}Google Scholar{% endif %}.</p>
 
-  <h2 class="section-title">
-    <span class="fa-stack fa-xs">
-      <i class="fas fa-circle fa-stack-2x"></i>
-      <i class="fas fa-file-alt fa-stack-1x fa-inverse"></i>
-    </span>
-    {{ publications.title }}
-  </h2>
-
-  {% if publications.intro %}
-  <div class="intro">
-    {{ publications.intro | markdownify }}
-  </div><!--//intro-->
+  {% comment %} Preprints first, in their own group {% endcomment %}
+  {% assign preprints = pubs | where: "preprint", true %}
+  {% if preprints.size > 0 %}
+  <div class="pub-year-group">
+    <div class="pub-year">Preprints</div>
+    <ol class="pub-list">
+      {% for paper in preprints %}
+      <li class="pub-item">
+        <span class="pub-title">
+          {% if paper.link %}<a href="{{ paper.link }}" target="_blank" rel="noopener">{{ paper.title }}</a>{% else %}{{ paper.title }}{% endif %}
+        </span>
+        <span class="pub-authors">{{ paper.authors }}</span>
+        {% if paper.venue %}<span class="pub-venue">{{ paper.venue }} {{ paper.year }}</span>{% endif %}
+      </li>
+      {% endfor %}
+    </ol>
+  </div>
   {% endif %}
 
-  {% for publication in publications.papers %}
-  <div class="item">
-    {% if publication.link %}
-      <li><a href="{{ publication.link }}">{{ publication.title }}</a></li>
-    {% else %}
-      <li>{{ publication.title }}</li>
-    {% endif %}
-    <div class="publication-authors">{{ publication.authors }}</div>
-    <div class="publication-conference">{{ publication.conference }}</div>
-  </div><!--//item-->
+  {% comment %} Published papers, grouped by year (most recent first) {% endcomment %}
+  {% assign published = pubs | where_exp: "item", "item.preprint != true" %}
+  {% assign by_year = published | group_by: "year" | sort: "name" | reverse %}
+  {% for group in by_year %}
+  <div class="pub-year-group">
+    <div class="pub-year">{{ group.name }}</div>
+    <ol class="pub-list">
+      {% for paper in group.items %}
+      <li class="pub-item">
+        <span class="pub-title">
+          {% if paper.link %}<a href="{{ paper.link }}" target="_blank" rel="noopener">{{ paper.title }}</a>{% else %}{{ paper.title }}{% endif %}
+        </span>
+        <span class="pub-authors">{{ paper.authors }}</span>
+        {% if paper.venue %}<span class="pub-venue">{{ paper.venue }} {{ paper.year }}</span>{% endif %}
+      </li>
+      {% endfor %}
+    </ol>
+  </div>
   {% endfor %}
-
-</section><!--//section-->
+</section>
 {% endif %}

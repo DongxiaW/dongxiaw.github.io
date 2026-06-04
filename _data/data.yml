@@ -1,189 +1,260 @@
 #
-# Be aware that even a small syntax error here can lead to failures in output.
+# All site content lives here. Edit this file to update the homepage.
+# Be aware that even a small syntax error here can break the build.
 #
 
-sidebar:
-    about: False # set to False or comment line if you want to remove the "how to use?" in the sidebar
-    education: True # set to False if you want education in main section instead of in sidebar
+# ----------------------------------------------------------------------
+# Profile / header
+# ----------------------------------------------------------------------
+profile:
+  name: Dongxia Wu
+  chinese_name:   # leave blank to hide
+  title: Incoming Assistant Professor, MBZUAI
+  subtitle: Currently Postdoctoral Scholar, Stanford University
+  lab: ATLAS Lab
+  lab_full: AI for Trustworthy Learning And Science
+  lab_logo: atlas-logo.svg
+  lab_tagline: Trustworthy, world-grounded AI for scientific discovery.
+  avatar: dongxiawu-web.jpg   # web-optimized (600px); original full-res kept as dongxiawu.jpeg
+  # Obfuscated against scrapers — shown as plain text, no mailto link (decodes to the MBZUAI address)
+  email_display: Dongxia [dot] Wu [at] mbzuai [dot] ac [dot] ae
+  cv: https://drive.google.com/file/d/1kqc8--ehLbsZQKVFJ2G1Ws-0rmEqZBMJ/view?usp=sharing
+  # Social links — leave blank to hide an icon
+  scholar: https://scholar.google.com/citations?user=jZb2e8cAAAAJ&hl=en
+  github: https://github.com/DongxiaW
+  linkedin: https://www.linkedin.com/in/dongxia-wu-2021
+  twitter: https://twitter.com/allen_dongxiawu
 
-    # Profile information
-    name: Dongxia (Allen) Wu
-    tagline: Postdoctoral Scholar
-    avatar: dongxiawu.jpeg  #place a 100x100 picture inside /assets/images/ folder and provide the name of the file below
+# ----------------------------------------------------------------------
+# Bio / about (rendered in the header, supports markdown links)
+# ----------------------------------------------------------------------
+bio: |
+  I am a postdoctoral scholar at [Stanford University](https://www.stanford.edu/), advised by Prof. Emily B. Fox.
+  In **Aug 2026** I will join [MBZUAI](https://mbzuai.ac.ae/) as a **tenure-track Assistant Professor**, jointly in the
+  Department of Statistics and Data Science and the Department of Machine Learning, where I will lead the
+  **ATLAS Lab** (*AI for Trustworthy Learning And Science*).
 
-    # Sidebar links
-    email: dowu@stanford.edu
-    website: 
-    linkedin: dongxia-wu-2021
-    xing:
-    github: DongxiaW
-    telegram: 
-    gitlab:
-    bitbucket:
-    twitter: '@allen_dongxiawu'
-    stack-overflow: 
-    codewars:
-    goodreads: 
-    pdf: https://drive.google.com/file/d/1kqc8--ehLbsZQKVFJ2G1Ws-0rmEqZBMJ/view?usp=sharing
+  I received my Ph.D. in Computer Science from [UC San Diego](https://ucsd.edu/) in 2025, advised by Prof. Rose Yu and
+  Prof. Yi-An Ma, and my B.S. in Applied Mathematics, Physics, and Computer Science from
+  [UW–Madison](https://www.wisc.edu/) in 2020.
 
-    interests:
-      - item: Viola (Solo, Quartet, Orchestra)
-      - item: Fencing (Foil)
+  My research builds **trustworthy AI** — calibrated, auditable, and physics-grounded models — and applies it to
+  **AI for science**, from molecular and cellular biology to the spatiotemporal dynamics of the physical world
+  (toward scientific *world models*).
 
-career-profile:
-    title: BIOGRAPHY
-    summary: |
-      **I am currently a postdoctoral scholar at [Stanford](https://www.stanford.edu/) advised by Prof. Emily B. Fox. 
-      Subsequently, I will join [MBZUAI](https://mbzuai.ac.ae/) Department of Statistics and Data Science and Department of Machine Learning 
-      as a tenure-track assistant professor in the fall of 2026.**
-      
-      I received my Ph.D. degree in Computer Science at [UC San Diego](https://ucsd.edu/) in 2025, 
-      advised by Prof. Rose Yu and Prof. Yian Ma. I received my Bachelor degree of science in Applied Math, 
-      Physics, and Computer Sciences at [University of Wisconsin-Madison](https://www.wisc.edu/) in 2020. 
-      My research primarily lies in Bayesian Deep Learning, Sequential Decision Making, Scientific Machine Learning, Spatiotemporal Modeling, and AI for Public Health. 
-      The proposed approaches have been widely used in public health, traffic modeling, climate science, and drug design.
+# ----------------------------------------------------------------------
+# News (most recent first). Keep `date` short.
+# ----------------------------------------------------------------------
+news:
+  - date: 2026
+    text: "The **ATLAS Lab** is **recruiting** PhD/master's students, postdocs, RAs, and visiting students — see [Prospective Students](#students)."
+  - date: 2026
+    text: "We are hosting the [**Structured Data for Health**](https://structureddata4health.github.io/) workshop at **ICML 2026** in Seoul!"
+  - date: 2026
+    text: "We are hosting the 2nd [**MMFM-BIOMED**](https://mmfm-biomed.github.io/) workshop at **CVPR 2026** in Denver!"
+  - date: 2026
+    text: "Honored to receive the **UC San Diego CSE Department Dissertation Award (Runner-Up)** for my Ph.D. thesis."
+  - date: 2026
+    text: "New paper *Divide and Learn: Multi-Objective Combinatorial Optimization at Scale* accepted at **ICML 2026**."
+  - date: 2025
+    text: "New paper *MF-LAL: Drug Compound Generation Using Multi-Fidelity Latent Space Active Learning* accepted at **ICML 2025**."
+  - date: 2025
+    text: "I started a postdoc at Stanford University with Prof. Emily B. Fox."
+  - date: 2025
+    text: "I defended my Ph.D. thesis at UC San Diego. Thanks to my advisors Prof. Rose Yu and Prof. Yi-An Ma!"
 
-      My lab is seeking several highly motivated PhD students/Postdocs/RAs/Visiting PhD students. All positions begin in Fall 2026. 
-      I recruit from the MBZUAI Statistics and Data Science Department and the Machine Learning Department. 
-      Specifically, I am seeking students in the following research areas:
+# ----------------------------------------------------------------------
+# Research interests (each thrust has a tagline + motivation)
+# ----------------------------------------------------------------------
+research:
+  intro: |
+    The **ATLAS Lab** (*AI for Trustworthy Learning And Science*) builds machine learning that is **trustworthy** —
+    calibrated, auditable, and physics-grounded — and uses it to advance **science**, with a focus on biology and the
+    spatiotemporal dynamics of the physical world. My research spans two intertwined thrusts:
+  thrusts:
+    - title: Trustworthy AI
+      tagline: Calibrated, auditable, and physics-grounded models.
+      body: |
+        As AI moves into high-stakes scientific decisions, accuracy alone is not enough. Models must know what they
+        don't know (**calibrated uncertainty**), expose *why* they decided (**auditability**), and respect known
+        physical and biological laws (**physics-grounded inductive bias**). I develop probabilistic and generative
+        methods — Bayesian deep learning, uncertainty quantification, and constrained generative modeling — that
+        turn black-box predictions into reliable, accountable decisions.
+    - title: AI for Science
+      tagline: From molecular and cellular biology to the spatiotemporal dynamics of the world.
+      body: |
+        Scientific data are scarce, noisy, multi-fidelity, and structured across space and time. I build generative
+        and Bayesian models that learn efficiently from such data to accelerate discovery — especially in **biology**,
+        spanning molecule, protein, and material design, single-cell modeling, and biomedical imaging — and to build
+        *world models* that capture how complex physical systems evolve across space and time. I also take a
+        **data-centric** view, curating open datasets and rigorous **benchmarks** that make progress in AI for science
+        measurable and reproducible.
 
-      - **Probabilistic Machine Learning**: uncertainty quantification, Bayesian optimization
-      - **Spatiotemporal Modeling, Control, and Optimization**: time series model (behavioral/biomedical), climate modeling, smart cities, supply chain, and industrial planning.
-      - **AI for Healthcare**: disease control, drug design, and cell modeling.
-      - **Multimodal and Foundation Models**: LLM trustworthiness, foundation models in science and engineering.
-    
-      If you are interested in working with me, please email your CV, academic transcript, and a brief outline of your research plan to **dowu@stanford.edu** with 
-      the subject line: **[Your Name] [Position You Are Applying For] - MBZUAI Research Opportunity Application.**
-        
-education:
-    - degree: Ph.D. student in CompSci
-      university: UC San Diego
-      time: 2020 - 2025
-    - degree: B.S in Applied Mathematics
-      university: UW-Madison
-      time: 2017 - 2020
+# ----------------------------------------------------------------------
+# Prospective students / recruiting
+# ----------------------------------------------------------------------
+recruiting:
+  intro: |
+    **The ATLAS Lab at MBZUAI is recruiting!** I am looking for highly motivated **PhD students, master's students,
+    postdocs, research assistants (RAs), and visiting students**, and I recruit from both the Department of Statistics
+    and Data Science and the Department of Machine Learning. **PhD positions begin in Fall 2027**; postdoc, master's,
+    RA, and visiting positions can begin as early as **Fall 2026**. I am especially interested in candidates working
+    across these areas:
+  areas:
+    - title: Generative Modeling & Reinforcement Learning
+      text: Diffusion- and flow-based generative models and reinforcement learning — core building blocks of modern machine learning.
+    - title: Foundation Models & Agents
+      text: Large language and vision–language models (LLMs/VLMs), multimodal reasoning, and agentic systems for science.
+    - title: Probabilistic Machine Learning
+      text: Bayesian inference, uncertainty quantification, sequential decision-making, and experimental design.
+    - title: AI for Biology & Science
+      text: Molecular, protein, and material design; single-cell modeling; biomedical imaging; time-series modeling; and spatiotemporal modeling.
+  apply: |
+    If you would like to work with me, please email your CV, academic transcript, and a brief research statement to
+    **Dongxia [dot] Wu [at] mbzuai [dot] ac [dot] ae**, using the subject line
+    **[Your Name] — [Position] — [Research Direction(s)] — ATLAS Lab Application**. In your email, please note which of
+    the four directions above best match your interests and why.
 
-experiences:
-    - role: Research Assistant
-      time: 2020 - 2025
-      company: UC San Diego, La Jolla, CA
-      details: |
-          - Spearheaded the uncertainty quantification study for spatiotemporal forecasting, compared Bayesian and Frequentist methods on traffic and COVID-19 predictions.
-    - role: Research Intern
-      time: June 2024 - September 2024
-      company: Samsung Research America, Mountain View, CA
-      details: |
-          - Designed Time Series Foundation Model for Anomaly Detection.
-    - role: Applied Scientist Intern
-      time: June 2023 - September 2023
-      company: Amazon, Seattle, WA
-      details: |
-          - Designed the contextual offer estimation method to understand and model customer preferences.
-    - role: AI Intern
-      time: June 2022 - September 2022
-      company: IBM Thomas J. Watson Research Center, Yorktown Heights, NY
-      details: |
-          - Spearheaded the causal inference study on multivariate point processes.
-projects:
-    title: Awards/Honors
-    intro: 
-    assignments: 
-      - title: HDSI Ph.D. Fellowship (2021-2024), top 10 in admitted HDSI Ph.D. students
-        link: 
-        tagline: UC San Diego (2021)
-      - title: College of Letters & Science Dean’s List
-        link: 
-        tagline: UW–Madison (2018, 2019)   
-      - title: Undergraduate Summer Scholarship
-        link: 
-        tagline: UW-Madison (2018)
-      - title: The First Prize in China Region and the Fourth Prize in the final
-        link: 
-        tagline: The Third Hong Kong International Chamber Music Competition (2016)
-
+# ----------------------------------------------------------------------
+# Publications (grouped by `year`, most recent first)
+# `selected: true` marks highlighted papers (optional, currently unused).
+# ----------------------------------------------------------------------
 publications:
-    title: Publications
-    intro: 
-    papers:
-      - title: "MF-LAL: Drug Compound Generation Using Multi-Fidelity Latent Space Active Learning"
-        link: "https://arxiv.org/pdf/2410.11226"
-        authors: Peter Eckmann, Dongxia Wu, Germano Heinzelmann, Michael K Gilson, Rose Yu.
-        conference: International Conference on Machine Learning (ICML) 2025
+  papers:
+    # ---- Preprints (preprint: true → shown in a separate group) ----
+    - title: "Calibrating LLMs with Semantic-level Reward"
+      link: "https://arxiv.org/abs/2605.15588"
+      authors: Fengfei Yu, Ruijia Niu, <b>Dongxia Wu</b>, Yi-An Ma, Rose Yu.
+      venue: arXiv preprint
+      year: 2026
+      preprint: true
 
-      - title: Diffusion Models as Constrained Samplers for Optimization with Unknown Constraints
-        link: "https://arxiv.org/abs/2402.18012"
-        authors: Lingkai Kong, Yuanqi Du, Wenhao Mu, Kirill Neklyudov, Valentin De Bortoli, Dongxia Wu, Haorui Wang, Aaron Ferber, Yi-An Ma, Carla P. Gomes, Chao Zhang.
-        conference: International Conference on Artificial Intelligence and Statistics (AISTATS) 2025
-        
-      - title: Learning Granger Causality from Instance-wise Self-attentive Hawkes Processes
-        link: "https://arxiv.org/abs/2106.02770"
-        authors: Dongxia Wu, Tsuyoshi Idé, Aurélie Lozano, Georgios Kollias, Jiří Navrátil, Naoki Abe, Yi-An Ma, Rose Yu.
-        conference: International Conference on Artificial Intelligence and Statistics (AISTATS) 2024
+    - title: "BALAR: A Bayesian Agentic Loop for Active Reasoning"
+      link: "https://arxiv.org/abs/2605.05386"
+      authors: Aymen Echarghaoui, <b>Dongxia Wu</b>, Emily B. Fox.
+      venue: arXiv preprint
+      year: 2026
+      preprint: true
 
-      - title: Multi-Fidelity Residual Neural Processes for Scalable Surrogate Modeling
-        link: "https://arxiv.org/abs/2402.18846"
-        authors: Ruijia Niu, Dongxia Wu, Kai Kim, Yi-An Ma, Duncan Watson-Parris, Rose Yu.
-        conference: International Conference on Machine Learning (ICML) 2024
+    - title: "CellFluxRL: Biologically-Constrained Virtual Cell Modeling via Reinforcement Learning"
+      link: "https://arxiv.org/abs/2603.21743"
+      authors: <b>Dongxia Wu</b>, Shiye Su, Yuhui Zhang, Elaine Sui, Emma Lundberg, Emily B. Fox, Serena Yeung-Levy.
+      venue: arXiv preprint
+      year: 2026
+      preprint: true
 
-      - title: Disentangled Multi-Fidelity Deep Bayesian Active Learning
-        link: "https://arxiv.org/abs/2305.04392"
-        authors: Dongxia Wu, Ruijia Niu, Matteo Chinazzi, Yian Ma, Rose Yu.
-        conference: International Conference on Machine Learning (ICML) 2023
-        
-      - title: Deep Bayesian Active Learning for Accelerating Stochastic Simulation
-        link: "https://arxiv.org/abs/2106.02770"
-        authors: Dongxia Wu, Ruijia Niu, Matteo Chinazzi, Alessandro Vespignani, Yian Ma, Rose Yu.
-        conference: ACM SIGKDD Conference on Knowledge Discovery and Data Mining (KDD) 2023
-        
-      - title: Multi-fidelity Hierarchical Neural Processes
-        link: "https://arxiv.org/abs/2206.04872"
-        authors: Dongxia Wu, Matteo Chinazzi, Alessandro Vespignani, Yi-An Ma, Rose Yu.
-        conference: ACM SIGKDD Conference on Knowledge Discovery and Data Mining (KDD) 2022
-      
-      - title: "DeepViFi: detecting oncoviral infections in cancer genomes using transformers"
-        link: "https://dl.acm.org/doi/abs/10.1145/3535508.3545551"
-        authors: Utkrisht Rajkumar, Sara Javadzadeh, Mihir Bafna, Dongxia Wu, Rose Yu, Jingbo Shang, Vineet Bafna.
-        conference: "ACM International Conference on Bioinformatics, Computational Biology and Health Informatics (BCB) 2022"
-        
-      - title: Quantifying Uncertainty in Deep Spatiotemporal Forecasting
-        link: "https://arxiv.org/abs/2105.11982"
-        authors: Dongxia Wu, Liyao Gao, Xinyue Xiong, Matteo Chinazzi, Alessandro Vespignani, Yian Ma, Rose Yu.
-        conference: ACM SIGKDD Conference on Knowledge Discovery and Data Mining (KDD) 2021
-        
-      - title: Evaluation of individual and ensemble probabilistic forecasts of COVID-19 mortality in the United States
-        link: "https://www.pnas.org/doi/abs/10.1073/pnas.2113561119"
-        authors: Estee Cramer, [et al, including Dongxia Wu]
-        conference: "Proceedings of the National Academy of Sciences, 2022, 119.15: e2113561119."
-      
-      - title: "DeepGLEAM: A hybrid mechanistic and deep learning model for COVID-19 forecasting"
-        link: "https://arxiv.org/abs/2102.06684"
-        authors: Dongxia Wu, Liyao Gao, Xinyue Xiong, Matteo Chinazzi, Alessandro Vespignani, Yian Ma, Rose Yu.
-        conference: https://arxiv.org/abs/2102.06684
-      
-      - title: A deep learning based automatic defect analysis framework for In-situ TEM ion irradiations
-        link: "https://www.sciencedirect.com/science/article/pii/S0927025621002871"
-        authors: Mingren Shen, Guanzhao Li, Dongxia Wu, et al.
-        conference: "Computational Materials Science, 2021, 197: 110560."
-        
-      - title: Multi defect detection and analysis of electron microscopy images with deep learning
-        link: "https://www.sciencedirect.com/science/article/pii/S0927025621003037"
-        authors: Mingren Shen, Guanzhao Li, Dongxia Wu, et al.
-        conference: "Computational Materials Science, 2021, 197: 110560."
+    - title: "Uncertainty-Aware Distribution-to-Distribution Flow Matching for Scientific Imaging"
+      link: "https://arxiv.org/abs/2603.21717"
+      authors: <b>Dongxia Wu</b>, Yuhui Zhang, Serena Yeung-Levy, Emma Lundberg, Emily B. Fox.
+      venue: arXiv preprint
+      year: 2026
+      preprint: true
 
-      - title: "Diff-BBO: Diffusion-Based Inverse Modeling for Black-Box Optimization"
-        link: "https://arxiv.org/abs/2407.00610"
-        authors: Dongxia Wu, Nikki Lijing Kuang, Ruijia Niu, Yi-An Ma, Rose Yu.
-        conference: NeurIPS Workshop on Bayesian Decision-making and Uncertainty 2024
+    # ---- Published ----
+    - title: "Divide and Learn: Multi-Objective Combinatorial Optimization at Scale"
+      link: "https://arxiv.org/abs/2602.11346"
+      authors: Esha Singh, <b>Dongxia Wu</b>, Chien-Yi Yang, Tajana Rosing, Rose Yu, Yi-An Ma.
+      venue: International Conference on Machine Learning (ICML)
+      year: 2026
 
-      - title: "Functional-level Uncertainty Quantification for Calibrated Fine-tuning on LLMs"
-        link: "https://arxiv.org/abs/2410.06431"
-        authors: Ruijia Niu, Dongxia Wu, Rose Yu, Yi-An Ma.
-        conference: NeurIPS Workshop on Statistical Foundations of LLMs and Foundation Models 2024
+    - title: "MF-LAL: Drug Compound Generation Using Multi-Fidelity Latent Space Active Learning"
+      link: "https://arxiv.org/pdf/2410.11226"
+      authors: Peter Eckmann, <b>Dongxia Wu</b>, Germano Heinzelmann, Michael K Gilson, Rose Yu.
+      venue: International Conference on Machine Learning (ICML)
+      year: 2025
 
-      - title: "GLEAM-AI: Neural Surrogate for Accelerated Epidemic Analytics and Forecasting"
-        link: "https://openreview.net/pdf?id=s4euyVmV9e"
-        authors: Mohammadmehdi Zahedi, Dongxia Wu, Jessica T. Davis, Yian Ma, Alessandro Vespignani, Rose Yu, Matteo Chinazzi.
-        conference: NeurIPS Workshop on Bayesian Decision-making and Uncertainty 2024
+    - title: Diffusion Models as Constrained Samplers for Optimization with Unknown Constraints
+      link: "https://arxiv.org/abs/2402.18012"
+      authors: Lingkai Kong, Yuanqi Du, Wenhao Mu, Kirill Neklyudov, Valentin De Bortoli, <b>Dongxia Wu</b>, Haorui Wang, Aaron Ferber, Yi-An Ma, Carla P. Gomes, Chao Zhang.
+      venue: International Conference on Artificial Intelligence and Statistics (AISTATS)
+      year: 2025
 
-footer: >
-    Designed with <i class="fas fa-heart"></i> by <a href="http://themes.3rdwavemedia.com" target="_blank" rel="nofollow">Xiaoying Riley</a>
+    - title: Learning Granger Causality from Instance-wise Self-attentive Hawkes Processes
+      link: "https://arxiv.org/abs/2402.03726"
+      authors: <b>Dongxia Wu</b>, Tsuyoshi Idé, Aurélie Lozano, Georgios Kollias, Jiří Navrátil, Naoki Abe, Yi-An Ma, Rose Yu.
+      venue: International Conference on Artificial Intelligence and Statistics (AISTATS)
+      year: 2024
+
+    - title: Multi-Fidelity Residual Neural Processes for Scalable Surrogate Modeling
+      link: "https://arxiv.org/abs/2402.18846"
+      authors: Ruijia Niu, <b>Dongxia Wu</b>, Kai Kim, Yi-An Ma, Duncan Watson-Parris, Rose Yu.
+      venue: International Conference on Machine Learning (ICML)
+      year: 2024
+
+    - title: "Diff-BBO: Diffusion-Based Inverse Modeling for Black-Box Optimization"
+      link: "https://arxiv.org/abs/2407.00610"
+      authors: <b>Dongxia Wu</b>, Nikki Lijing Kuang, Ruijia Niu, Yi-An Ma, Rose Yu.
+      venue: NeurIPS Workshop on Bayesian Decision-making and Uncertainty
+      year: 2024
+
+    - title: "Functional-level Uncertainty Quantification for Calibrated Fine-tuning on LLMs"
+      link: "https://arxiv.org/abs/2410.06431"
+      authors: Ruijia Niu, <b>Dongxia Wu</b>, Rose Yu, Yi-An Ma.
+      venue: NeurIPS Workshop on Statistical Foundations of LLMs and Foundation Models
+      year: 2024
+
+    - title: "GLEAM-AI: Neural Surrogate for Accelerated Epidemic Analytics and Forecasting"
+      link: "https://openreview.net/pdf?id=s4euyVmV9e"
+      authors: Mohammadmehdi Zahedi, <b>Dongxia Wu</b>, Jessica T. Davis, Yi-An Ma, Alessandro Vespignani, Rose Yu, Matteo Chinazzi.
+      venue: NeurIPS Workshop on Bayesian Decision-making and Uncertainty
+      year: 2024
+
+    - title: Disentangled Multi-Fidelity Deep Bayesian Active Learning
+      link: "https://arxiv.org/abs/2305.04392"
+      authors: <b>Dongxia Wu</b>, Ruijia Niu, Matteo Chinazzi, Yi-An Ma, Rose Yu.
+      venue: International Conference on Machine Learning (ICML)
+      year: 2023
+
+    - title: Deep Bayesian Active Learning for Accelerating Stochastic Simulation
+      link: "https://arxiv.org/abs/2106.02770"
+      authors: <b>Dongxia Wu</b>, Ruijia Niu, Matteo Chinazzi, Alessandro Vespignani, Yi-An Ma, Rose Yu.
+      venue: ACM SIGKDD Conference on Knowledge Discovery and Data Mining (KDD)
+      year: 2023
+
+    - title: Multi-Fidelity Hierarchical Neural Processes
+      link: "https://arxiv.org/abs/2206.04872"
+      authors: <b>Dongxia Wu</b>, Matteo Chinazzi, Alessandro Vespignani, Yi-An Ma, Rose Yu.
+      venue: ACM SIGKDD Conference on Knowledge Discovery and Data Mining (KDD)
+      year: 2022
+
+    - title: "DeepViFi: Detecting Oncoviral Infections in Cancer Genomes Using Transformers"
+      link: "https://dl.acm.org/doi/abs/10.1145/3535508.3545551"
+      authors: Utkrisht Rajkumar, Sara Javadzadeh, Mihir Bafna, <b>Dongxia Wu</b>, Rose Yu, Jingbo Shang, Vineet Bafna.
+      venue: ACM Conference on Bioinformatics, Computational Biology and Health Informatics (BCB)
+      year: 2022
+
+    - title: Evaluation of Individual and Ensemble Probabilistic Forecasts of COVID-19 Mortality in the United States
+      link: "https://www.pnas.org/doi/abs/10.1073/pnas.2113561119"
+      authors: Estee Cramer, et al. (including <b>Dongxia Wu</b>).
+      venue: Proceedings of the National Academy of Sciences (PNAS)
+      year: 2022
+
+    - title: Quantifying Uncertainty in Deep Spatiotemporal Forecasting
+      link: "https://arxiv.org/abs/2105.11982"
+      authors: <b>Dongxia Wu</b>, Liyao Gao, Xinyue Xiong, Matteo Chinazzi, Alessandro Vespignani, Yi-An Ma, Rose Yu.
+      venue: ACM SIGKDD Conference on Knowledge Discovery and Data Mining (KDD)
+      year: 2021
+
+    - title: "DeepGLEAM: A Hybrid Mechanistic and Deep Learning Model for COVID-19 Forecasting"
+      link: "https://arxiv.org/abs/2102.06684"
+      authors: <b>Dongxia Wu</b>, Liyao Gao, Xinyue Xiong, Matteo Chinazzi, Alessandro Vespignani, Yi-An Ma, Rose Yu.
+      venue: arXiv preprint
+      year: 2021
+
+    - title: A Deep Learning Based Automatic Defect Analysis Framework for In-situ TEM Ion Irradiations
+      link: "https://www.sciencedirect.com/science/article/pii/S0927025621002871"
+      authors: Mingren Shen, Guanzhao Li, <b>Dongxia Wu</b>, et al.
+      venue: Computational Materials Science
+      year: 2021
+
+    - title: Multi-Defect Detection and Analysis of Electron Microscopy Images with Deep Learning
+      link: "https://www.sciencedirect.com/science/article/pii/S0927025621003037"
+      authors: Mingren Shen, Guanzhao Li, <b>Dongxia Wu</b>, et al.
+      venue: Computational Materials Science
+      year: 2021
+
+# ----------------------------------------------------------------------
+# Footer
+# ----------------------------------------------------------------------
+footer:
+  copyright: Dongxia Wu

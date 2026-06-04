@@ -1,0 +1,18 @@
+{% assign rec = site.data.data.recruiting %}
+{% if rec %}
+<section class="section" id="students">
+  <h2 class="section-title">Prospective Students</h2>
+  {% if rec.intro %}<div class="section-intro">{{ rec.intro | markdownify }}</div>{% endif %}
+
+  <ul class="areas-list">
+    {% for area in rec.areas %}
+    <li class="area-item">
+      <span class="area-title">{{ area.title }}</span>
+      <span class="area-text">{{ area.text }}</span>
+    </li>
+    {% endfor %}
+  </ul>
+
+  {% if rec.apply %}<div class="apply-note">{{ rec.apply | markdownify }}</div>{% endif %}
+</section>
+{% endif %}
