@@ -86,7 +86,8 @@ research:
         Scientific data are scarce, noisy, multi-fidelity, and structured across space and time. I build generative
         and Bayesian models that learn efficiently from such data to accelerate discovery — especially in **biology**,
         spanning molecule, protein, and material design, single-cell modeling, and biomedical imaging — and to build
-        *world models* that capture how complex physical systems evolve across space and time. I also take a
+        *world models* that capture how complex physical systems evolve across space and time, from fluid dynamics to
+        the climate. I also take a
         **data-centric** view, curating open datasets and rigorous **benchmarks** that make progress in AI for science
         measurable and reproducible.
 
@@ -108,7 +109,7 @@ recruiting:
     - title: Probabilistic Machine Learning
       text: Bayesian inference, uncertainty quantification, sequential decision-making, and experimental design.
     - title: AI for Biology & Science
-      text: Molecular, protein, and material design; single-cell modeling; biomedical imaging; time-series modeling; and spatiotemporal modeling.
+      text: Molecular, protein, and material design; single-cell modeling; biomedical imaging; time-series modeling; and spatiotemporal modeling (e.g., fluid dynamics, climate).
   apply: |
     If you would like to work with me, please email your CV, academic transcript, and a brief research statement to
     **Dongxia [dot] Wu [at] mbzuai [dot] ac [dot] ae**, using the subject line
