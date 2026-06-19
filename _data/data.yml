@@ -117,6 +117,27 @@ recruiting:
     **Dongxia [dot] Wu [at] mbzuai [dot] ac [dot] ae**, using the subject line
     **[Your Name] — [Position] — [Research Direction(s)] — ATLAS Lab Application**. In your email, please note which of
     the four directions above best match your interests and why.
+  # Mentoring track record (most recent first)
+  mentees:
+    - name: Mingyu Li
+      link: https://marvelim.github.io/
+      affiliation: Peking University, Turing Class (Undergraduate)
+      years: 2025–present
+    - name: Haozhou Xu
+      link: https://hzempire.github.io/
+      affiliation: UCSD CSE M.S.
+      now: Google SDE
+      years: 2024–2026
+    - name: Peter Eckmann
+      link: https://petereckmann1.github.io/
+      affiliation: UCSD CSE M.S.
+      now: Stanford CS PhD
+      years: 2023–2025
+    - name: Brooks (Ruijia) Niu
+      link: https://sites.google.com/view/niubrooks/
+      affiliation: UCSD CSE M.S.
+      now: UCSD CSE PhD
+      years: 2022–2025
 
 # ----------------------------------------------------------------------
 # Publications (grouped by `year`, most recent first)

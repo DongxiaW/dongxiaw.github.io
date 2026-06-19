@@ -14,5 +14,19 @@
   </ul>
 
   {% if rec.apply %}<div class="apply-note">{{ rec.apply | markdownify }}</div>{% endif %}
+
+  {% if rec.mentees %}
+  <h3 class="subsection-title">Mentoring</h3>
+  <ul class="mentee-list">
+    {% for m in rec.mentees %}
+    <li class="mentee-item">
+      <span class="mentee-years">{{ m.years }}</span>
+      <span class="mentee-info">
+        <a href="{{ m.link }}" target="_blank" rel="noopener">{{ m.name }}</a> &mdash; {{ m.affiliation }}{% if m.now %} <span class="mentee-now">(now {{ m.now }})</span>{% endif %}
+      </span>
+    </li>
+    {% endfor %}
+  </ul>
+  {% endif %}
 </section>
 {% endif %}
