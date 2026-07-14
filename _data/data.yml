@@ -55,6 +55,8 @@ news:
   - date: 2026
     text: "Honored to receive the **UC San Diego CSE Department Dissertation Award (Runner-Up)** for my Ph.D. thesis."
   - date: 2026
+    text: "New paper *SimulRAG: Simulator-based RAG for Grounding LLMs in Long-form Scientific QA* accepted at **COLM 2026**."
+  - date: 2026
     text: "New paper *CellFluxRL: Biologically-Constrained Virtual Cell Modeling via Reinforcement Learning* accepted at **ECCV 2026**."
   - date: 2026
     text: "New paper *Divide and Learn: Multi-Objective Combinatorial Optimization at Scale* accepted at **ICML 2026**."
