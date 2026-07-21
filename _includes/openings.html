@@ -13,7 +13,8 @@
     {% if pos.meta %}
     <div class="opening-tags">
       {% assign chips = pos.meta | split: "·" %}
-      {% for c in chips %}<span class="chip">{{ c | strip }}</span>{% endfor %}
+      {% for c in chips %}<span class="chip">{{ c | strip }}</span>
+      {% endfor %}
     </div>
     {% endif %}
 
