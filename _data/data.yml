@@ -76,16 +76,16 @@ openings:
       badge: Now hiring
       meta: On-site · MBZUAI, Abu Dhabi · Flexible start (as early as Fall 2026) · Open until filled
       summary: |
-        Co-advised by [Prof. Le Song](https://dasongle.github.io/) (MBZUAI) and Prof. Dongxia Wu, this postdoc
+        Co-advised by Prof. Dongxia Wu and [Prof. Le Song](https://dasongle.github.io/), this postdoc
         will build foundation-model approaches to **virtual cell modeling**.
       directions:
         - Multiscale and multimodal **cell foundation models**.
         - A unified **cell world model** for understanding, predicting, simulating, and programming biology.
         - "**Trustworthy, mechanistically grounded** modeling from a **systems-biology** perspective — ensuring cell perturbations respect mechanistic constraints (biological correctness)."
       offer:
-        - Co-advising by Prof. Le Song and Prof. Dongxia Wu.
+        - Co-advising by Prof. Dongxia Wu and Prof. Le Song.
         - Ample **GPU resources** to train foundation models.
-        - Collaboration with [GenBio AI](https://genbio.ai/) and Stanford.
+        - Collaboration with [GenBio AI](https://genbio.ai/) and the Stanford Institute for Human-Centered AI.
         - Competitive salary and benefits.
       responsibilities:
         - Develop novel AI and ML methodologies.
