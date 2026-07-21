@@ -68,6 +68,41 @@ news:
     text: "I defended my Ph.D. thesis at UC San Diego. Thanks to my advisors Prof. Rose Yu and Prof. Yi-An Ma!"
 
 # ----------------------------------------------------------------------
+# Open positions (data-driven; add more entries under `positions`)
+# ----------------------------------------------------------------------
+openings:
+  positions:
+    - title: Postdoctoral Researcher — Virtual Cell Modeling
+      badge: Now hiring
+      meta: On-site · MBZUAI, Abu Dhabi · Flexible start (as early as Fall 2026) · Open until filled
+      summary: |
+        Co-advised by [Prof. Le Song](https://dasongle.github.io/) (MBZUAI) and Dongxia Wu, this postdoc
+        will build foundation-model approaches to **virtual cell modeling** — learning to decode, simulate,
+        and program human biology.
+      directions:
+        - Multiscale **foundation models** to decode and simulate human biology.
+        - A unified **cell world model** for understanding, predicting, simulating, and programming biology.
+        - "**Trustworthy, mechanistically grounded** modeling — ensuring cell perturbations respect systems-biology constraints (biological correctness)."
+      offer:
+        - Co-advising by Prof. Le Song and Dongxia Wu.
+        - Ample **GPU resources** to train foundation models.
+        - Collaboration with [GenBio AI](https://genbio.ai/) and Stanford.
+        - Competitive salary.
+      responsibilities:
+        - Develop novel AI and ML methodologies.
+        - Conduct interdisciplinary research with collaborators in academia and industry.
+        - Publish at leading conferences and journals.
+        - Guide junior students in their research.
+      qualifications:
+        - Ph.D. in Computer Science, Computational Biology, AI/ML, Statistics, or a closely related field.
+        - Strong AI-for-biology background, with a publication record at leading venues (ICML, NeurIPS, ICLR, CVPR, …) and journals (e.g., Nature-family).
+        - Strong collaborative, verbal, and written communication skills.
+      apply: |
+        To apply, email your **CV**, a brief **research statement**, and **2–3 references** to
+        **Dongxia [dot] Wu [at] mbzuai [dot] ac [dot] ae** with the subject line
+        **Postdoc — Virtual Cell Modeling**.
+
+# ----------------------------------------------------------------------
 # Research interests (each thrust has a tagline + motivation)
 # ----------------------------------------------------------------------
 research:

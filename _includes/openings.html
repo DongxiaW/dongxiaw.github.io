@@ -1,0 +1,47 @@
+{% assign openings = site.data.data.openings %}
+{% if openings and openings.positions %}
+<section class="section" id="openings">
+  <h2 class="section-title">Openings</h2>
+
+  {% for pos in openings.positions %}
+  <article class="opening">
+    <div class="opening-head">
+      <h3 class="opening-title">{{ pos.title }}</h3>
+      {% if pos.badge %}<span class="opening-badge">{{ pos.badge }}</span>{% endif %}
+    </div>
+    {% if pos.meta %}<p class="opening-meta">{{ pos.meta }}</p>{% endif %}
+    {% if pos.summary %}<div class="opening-summary">{{ pos.summary | markdownify }}</div>{% endif %}
+
+    {% if pos.directions %}
+    <div class="opening-block">
+      <h4>Research directions</h4>
+      <ul>{% for d in pos.directions %}<li>{{ d | markdownify | remove: '<p>' | remove: '</p>' }}</li>{% endfor %}</ul>
+    </div>
+    {% endif %}
+
+    <div class="opening-grid">
+      {% if pos.offer %}
+      <div class="opening-block">
+        <h4>What we offer</h4>
+        <ul>{% for o in pos.offer %}<li>{{ o | markdownify | remove: '<p>' | remove: '</p>' }}</li>{% endfor %}</ul>
+      </div>
+      {% endif %}
+      {% if pos.responsibilities %}
+      <div class="opening-block">
+        <h4>Responsibilities</h4>
+        <ul>{% for r in pos.responsibilities %}<li>{{ r | markdownify | remove: '<p>' | remove: '</p>' }}</li>{% endfor %}</ul>
+      </div>
+      {% endif %}
+      {% if pos.qualifications %}
+      <div class="opening-block">
+        <h4>Qualifications</h4>
+        <ul>{% for q in pos.qualifications %}<li>{{ q | markdownify | remove: '<p>' | remove: '</p>' }}</li>{% endfor %}</ul>
+      </div>
+      {% endif %}
+    </div>
+
+    {% if pos.apply %}<div class="opening-apply">{{ pos.apply | markdownify }}</div>{% endif %}
+  </article>
+  {% endfor %}
+</section>
+{% endif %}

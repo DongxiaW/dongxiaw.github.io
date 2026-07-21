@@ -315,6 +315,75 @@ p { margin: 0 0 1em; }
 }
 .apply-note p:last-child { margin-bottom: 0; }
 
+/* ============================================================
+   Openings
+   ============================================================ */
+.opening {
+  border: 1px solid var(--border);
+  border-left: 4px solid var(--accent);
+  border-radius: var(--radius);
+  background: var(--bg-soft);
+  padding: 22px 24px;
+}
+.opening + .opening { margin-top: 18px; }
+.opening-head {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 10px 12px;
+}
+.opening-title {
+  font-size: 18px;
+  font-weight: 700;
+  color: var(--accent-dark);
+  margin: 0;
+}
+.opening-badge {
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: .02em;
+  color: #fff;
+  background: var(--accent);
+  border-radius: 20px;
+  padding: 3px 11px;
+}
+.opening-meta {
+  color: var(--text-faint);
+  font-size: 14px;
+  margin: 6px 0 0;
+}
+.opening-summary { font-size: 15.5px; margin-top: 12px; }
+.opening-summary p:last-child { margin-bottom: 0; }
+.opening-block { margin-top: 16px; }
+.opening-block h4 {
+  font-size: 12.5px;
+  font-weight: 700;
+  letter-spacing: .06em;
+  text-transform: uppercase;
+  color: var(--accent-dark);
+  margin: 0 0 8px;
+}
+.opening-block ul {
+  margin: 0;
+  padding-left: 20px;
+  font-size: 15px;
+  color: var(--text);
+}
+.opening-block li { margin-bottom: 4px; }
+.opening-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 4px 28px;
+}
+.opening-apply {
+  margin-top: 18px;
+  padding: 14px 18px;
+  background: var(--accent-soft);
+  border-radius: var(--radius);
+  font-size: 15px;
+}
+.opening-apply p:last-child { margin-bottom: 0; }
+
 /* Mentoring subsection */
 .subsection-title {
   font-size: 18px;
@@ -438,6 +507,7 @@ p { margin: 0 0 1em; }
 
   .research-grid { grid-template-columns: 1fr; }
   .areas-list { grid-template-columns: 1fr; }
+  .opening-grid { grid-template-columns: 1fr; gap: 4px; }
 
   .mentee-item { flex-direction: column; gap: 2px; }
   .mentee-years { flex-basis: auto; }
