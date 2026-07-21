@@ -7,40 +7,54 @@
   <article class="opening">
     <div class="opening-head">
       <h3 class="opening-title">{{ pos.title }}</h3>
-      {% if pos.badge %}<span class="opening-badge">{{ pos.badge }}</span>{% endif %}
+      {% if pos.badge %}<span class="opening-badge"><span class="opening-badge-dot"></span>{{ pos.badge }}</span>{% endif %}
     </div>
-    {% if pos.meta %}<p class="opening-meta">{{ pos.meta }}</p>{% endif %}
+
+    {% if pos.meta %}
+    <div class="opening-tags">
+      {% assign chips = pos.meta | split: "·" %}
+      {% for c in chips %}<span class="chip">{{ c | strip }}</span>{% endfor %}
+    </div>
+    {% endif %}
+
     {% if pos.summary %}<div class="opening-summary">{{ pos.summary | markdownify }}</div>{% endif %}
 
     {% if pos.directions %}
-    <div class="opening-block">
-      <h4>Research directions</h4>
-      <ul>{% for d in pos.directions %}<li>{{ d | markdownify | remove: '<p>' | remove: '</p>' }}</li>{% endfor %}</ul>
+    <div class="opening-directions">
+      <h4><i class="fas fa-compass"></i> Research directions</h4>
+      <ol class="dir-list">
+        {% for d in pos.directions %}<li>{{ d | markdownify | remove: '<p>' | remove: '</p>' }}</li>{% endfor %}
+      </ol>
     </div>
     {% endif %}
 
     <div class="opening-grid">
       {% if pos.offer %}
       <div class="opening-block">
-        <h4>What we offer</h4>
-        <ul>{% for o in pos.offer %}<li>{{ o | markdownify | remove: '<p>' | remove: '</p>' }}</li>{% endfor %}</ul>
+        <h4><i class="fas fa-gift"></i> What we offer</h4>
+        <ul class="tick-list">{% for o in pos.offer %}<li>{{ o | markdownify | remove: '<p>' | remove: '</p>' }}</li>{% endfor %}</ul>
       </div>
       {% endif %}
       {% if pos.responsibilities %}
       <div class="opening-block">
-        <h4>Responsibilities</h4>
-        <ul>{% for r in pos.responsibilities %}<li>{{ r | markdownify | remove: '<p>' | remove: '</p>' }}</li>{% endfor %}</ul>
+        <h4><i class="fas fa-list-check"></i> Responsibilities</h4>
+        <ul class="tick-list">{% for r in pos.responsibilities %}<li>{{ r | markdownify | remove: '<p>' | remove: '</p>' }}</li>{% endfor %}</ul>
       </div>
       {% endif %}
       {% if pos.qualifications %}
-      <div class="opening-block">
-        <h4>Qualifications</h4>
-        <ul>{% for q in pos.qualifications %}<li>{{ q | markdownify | remove: '<p>' | remove: '</p>' }}</li>{% endfor %}</ul>
+      <div class="opening-block opening-block--full">
+        <h4><i class="fas fa-user-graduate"></i> Qualifications</h4>
+        <ul class="tick-list">{% for q in pos.qualifications %}<li>{{ q | markdownify | remove: '<p>' | remove: '</p>' }}</li>{% endfor %}</ul>
       </div>
       {% endif %}
     </div>
 
-    {% if pos.apply %}<div class="opening-apply">{{ pos.apply | markdownify }}</div>{% endif %}
+    {% if pos.apply %}
+    <div class="opening-apply">
+      <i class="fas fa-paper-plane"></i>
+      <div>{{ pos.apply | markdownify }}</div>
+    </div>
+    {% endif %}
   </article>
   {% endfor %}
 </section>
