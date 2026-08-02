@@ -9,8 +9,8 @@
 profile:
   name: Dongxia Wu
   chinese_name:   # leave blank to hide
-  title: Incoming Assistant Professor, MBZUAI
-  subtitle: Currently Postdoctoral Scholar, Stanford University
+  title: Assistant Professor, MBZUAI
+  subtitle: Statistics and Data Science · Machine Learning
   lab: ATLAS Lab
   lab_full: AI for Trustworthy Learning And Science
   lab_logo: atlas-logo.svg
@@ -29,14 +29,14 @@ profile:
 # Bio / about (rendered in the header, supports markdown links)
 # ----------------------------------------------------------------------
 bio: |
-  I am a postdoctoral scholar at [Stanford University](https://www.stanford.edu/), advised by Prof. Emily B. Fox.
-  In **Aug 2026** I will join [MBZUAI](https://mbzuai.ac.ae/) as a **tenure-track Assistant Professor**, jointly in the
-  Department of Statistics and Data Science and the Department of Machine Learning, where I will lead the
-  **ATLAS Lab** (*AI for Trustworthy Learning And Science*).
+  I am a **tenure-track Assistant Professor** at [MBZUAI](https://mbzuai.ac.ae/), jointly in the Department of
+  Statistics and Data Science and the Department of Machine Learning, where I lead the **ATLAS Lab**
+  (*AI for Trustworthy Learning And Science*).
 
-  I received my Ph.D. in Computer Science from [UC San Diego](https://ucsd.edu/) in 2025, advised by Prof. Rose Yu and
-  Prof. Yi-An Ma, and my B.S. in Applied Mathematics, Physics, and Computer Science from
-  [UW–Madison](https://www.wisc.edu/) in 2020.
+  Previously, I was a postdoctoral scholar at [Stanford University](https://www.stanford.edu/), working with
+  Prof. Emily B. Fox. I received my Ph.D. in Computer Science from [UC San Diego](https://ucsd.edu/) in 2025,
+  advised by Prof. Rose Yu and Prof. Yi-An Ma, and my B.S. in Applied Mathematics, Physics, and Computer Science
+  from [UW–Madison](https://www.wisc.edu/) in 2020.
 
   My research builds **trustworthy AI** — calibrated, auditable, and physics-grounded models — and applies it to
   **AI for science**, from molecular and cellular biology to the spatiotemporal dynamics of the physical world
@@ -46,6 +46,8 @@ bio: |
 # News (most recent first). Keep `date` short.
 # ----------------------------------------------------------------------
 news:
+  - date: 2026
+    text: "I joined [MBZUAI](https://mbzuai.ac.ae/) as a **tenure-track Assistant Professor** and launched the **ATLAS Lab**!"
   - date: 2026
     text: "The **ATLAS Lab** is **recruiting** PhD/master's students, postdocs, RAs, and visiting students — see [Prospective Students](#students)."
   - date: 2026
@@ -74,7 +76,7 @@ openings:
   positions:
     - title: Postdoctoral Researcher — Virtual Cell Modeling
       badge: Now hiring
-      meta: MBZUAI, Abu Dhabi · Flexible start (as early as Fall 2026) · Open until filled
+      meta: MBZUAI, Abu Dhabi · Flexible start date · Open until filled
       summary: |
         Co-advised by Prof. Dongxia Wu and [Prof. Le Song](https://dasongle.github.io/), this postdoc
         will build foundation-model approaches to **virtual cell modeling**.
@@ -137,8 +139,8 @@ recruiting:
     **The ATLAS Lab at MBZUAI is recruiting!** I am looking for highly motivated **PhD students, master's students,
     postdocs, research assistants (RAs), and visiting students**, and I recruit from both the Department of Statistics
     and Data Science and the Department of Machine Learning. **PhD positions begin in Fall 2027**; postdoc, master's,
-    RA, and visiting positions can begin as early as **Fall 2026**. I am especially interested in candidates working
-    across these areas:
+    RA, and visiting positions are **open now**, with flexible start dates. I am especially interested in candidates
+    working across these areas:
   areas:
     - title: Generative Modeling & Reinforcement Learning
       text: Diffusion- and flow-based generative models and reinforcement learning — core building blocks of modern machine learning.
