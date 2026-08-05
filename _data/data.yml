@@ -165,15 +165,15 @@ group:
     - name: Yifeng Guan
       role: Ph.D. Student
       affiliation: Chu Kochen Honors College, Zhejiang University
-    - name: Hebao Zhu
-      role: Visiting Student
-      affiliation: Chongqing University
     - name: Zicheng Li
       role: Research Engineer
       affiliation: The University of Hong Kong
     - name: Billel Aissani
       role: Research Engineer
       affiliation: "A*STAR, PSL University"
+    - name: Hebao Zhu
+      role: Visiting Student
+      affiliation: Chongqing University
     - name: Junming Liu
       role: Research Intern
       affiliation: Tongji University, Shanghai AI Lab
