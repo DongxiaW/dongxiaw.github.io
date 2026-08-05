@@ -155,6 +155,24 @@ recruiting:
     **Dongxia [dot] Wu [at] mbzuai [dot] ac [dot] ae**, using the subject line
     **[Your Name] — [Position] — [Research Direction(s)] — ATLAS Lab Application**. In your email, please note which of
     the four directions above best match your interests and why.
+  # Current ATLAS Lab members
+  members:
+    - name: Yifeng Guan
+      role: Ph.D. Student
+      affiliation: Chu Kochen Honors College, Zhejiang University
+    - name: Hebao Zhu
+      role: Visiting Student
+      affiliation: Chongqing University
+    - name: Zicheng Li
+      role: Research Engineer
+      affiliation: The University of Hong Kong
+    - name: Billel Aissani
+      role: Research Engineer
+      affiliation: "A*STAR, PSL University"
+    - name: Junming Liu
+      role: Research Intern
+      affiliation: Tongji University, Shanghai AI Lab
+
   # Mentoring track record (most recent first)
   mentees:
     - name: Mingyu Li

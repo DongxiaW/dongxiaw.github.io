@@ -515,6 +515,17 @@ p { margin: 0 0 1em; }
 .mentee-info a { font-weight: 600; }
 .mentee-now { color: var(--text-soft); }
 
+/* Lab members — role in the left rail instead of years */
+.member-role {
+  flex: 0 0 152px;
+  color: var(--accent-dark);
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: .01em;
+  padding-top: 3px;
+}
+.member-name { font-weight: 600; }
+
 /* ============================================================
    Publications
    ============================================================ */
@@ -617,7 +628,8 @@ p { margin: 0 0 1em; }
   .opening-grid { grid-template-columns: 1fr; gap: 4px; }
 
   .mentee-item { flex-direction: column; gap: 2px; }
-  .mentee-years { flex-basis: auto; }
+  .mentee-years,
+  .member-role { flex-basis: auto; }
 
   .pub-year-group { flex-direction: column; gap: 4px; }
   .pub-year { padding-top: 0; }
