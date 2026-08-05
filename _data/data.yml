@@ -155,6 +155,11 @@ recruiting:
     **Dongxia [dot] Wu [at] mbzuai [dot] ac [dot] ae**, using the subject line
     **[Your Name] — [Position] — [Research Direction(s)] — ATLAS Lab Application**. In your email, please note which of
     the four directions above best match your interests and why.
+
+# ----------------------------------------------------------------------
+# Group — current lab members and mentoring history
+# ----------------------------------------------------------------------
+group:
   # Current ATLAS Lab members
   members:
     - name: Yifeng Guan
