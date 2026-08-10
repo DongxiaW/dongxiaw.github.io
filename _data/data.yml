@@ -165,16 +165,19 @@ group:
     - name: Yifeng Guan
       role: Ph.D. Student
       affiliation: Chu Kochen Honors College, Zhejiang University
-    - name: Zicheng Li
+    - name: Zicheng Liu
+      link: https://innovationlzc.github.io/
       role: Research Engineer
       affiliation: The University of Hong Kong
     - name: Billel Aissani
       role: Research Engineer
       affiliation: "A*STAR, PSL University"
     - name: Hebao Zhu
+      link: https://miku-zb.github.io/
       role: Visiting Student
       affiliation: Chongqing University
     - name: Junming Liu
+      link: https://wings-of-disaster.github.io/
       role: Research Intern
       affiliation: Tongji University, Shanghai AI Lab
 
