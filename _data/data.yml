@@ -163,6 +163,7 @@ group:
   # Current ATLAS Lab members
   members:
     - name: Yifeng Guan
+      link: https://yifenggu4n.github.io/
       role: Ph.D. Student
       affiliation: Chu Kochen Honors College, Zhejiang University
     - name: Zicheng Liu
@@ -170,6 +171,7 @@ group:
       role: Research Engineer
       affiliation: The University of Hong Kong
     - name: Billel Aissani
+      link: https://www.linkedin.com/in/billel-aissani-84034a1b9/
       role: Research Engineer
       affiliation: "A*STAR, PSL University"
     - name: Hebao Zhu
