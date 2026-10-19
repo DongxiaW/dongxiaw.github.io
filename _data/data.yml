@@ -162,26 +162,25 @@ recruiting:
 group:
   # Current ATLAS Lab members
   members:
-    - name: Yifeng Guan
-      link: https://yifenggu4n.github.io/
-      role: Ph.D. Student
-      affiliation: Chu Kochen Honors College, Zhejiang University
-    - name: Zicheng Liu
-      link: https://innovationlzc.github.io/
+    - name: Yuliang Fan
+      link: https://fylskrskr.github.io/
       role: Research Engineer
-      affiliation: The University of Hong Kong
-    - name: Billel Aissani
-      link: https://www.linkedin.com/in/billel-aissani-84034a1b9/
-      role: Research Engineer
-      affiliation: "A*STAR, PSL University"
+      affiliation: Shanghai Jiao Tong University (M.Eng. in EECS)
     - name: Hebao Zhu
       link: https://miku-zb.github.io/
       role: Visiting Student
       affiliation: Chongqing University
-    - name: Junming Liu
-      link: https://wings-of-disaster.github.io/
+    - name: Xinyu Xiao
+      link: https://xin-yuxiao.github.io/
+      role: Visiting Student
+      affiliation: University of Chinese Academy of Sciences (M.S.)
+    - name: Yuan Tao
+      link: https://www.linkedin.com/in/yuan-tao-a55510389/
       role: Research Intern
-      affiliation: Tongji University, Shanghai AI Lab
+      affiliation: University of Oxford (M.Sc.)
+    - name: Shangxuan Chen
+      role: Undergraduate Student
+      affiliation: MBZUAI
 
   # Mentoring track record (most recent first)
   mentees:
