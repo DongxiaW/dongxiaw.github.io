@@ -138,9 +138,14 @@ recruiting:
   intro: |
     **The ATLAS Lab at MBZUAI is recruiting!** I am looking for highly motivated **PhD students, master's students,
     postdocs, research assistants (RAs), and visiting students**, and I recruit from the Division of Computing
-    and Mathematical Sciences. **PhD positions begin in Fall 2027**; postdoc, master's,
-    RA, and visiting positions are **open now**, with flexible start dates. I am especially interested in candidates
-    working across these areas:
+    and Mathematical Sciences.
+  opportunities:
+    - status: Starting Fall 2027
+      roles: PhD students
+    - status: Open now
+      roles: Master's students, postdocs, RAs, and visiting students
+      note: Flexible start dates.
+  areas_intro: "I am especially interested in candidates working across these areas:"
   areas:
     - title: Generative Modeling & Reinforcement Learning
       text: Diffusion- and flow-based generative models and reinforcement learning — core building blocks of modern machine learning.
@@ -151,10 +156,10 @@ recruiting:
     - title: AI for Biology & Science
       text: Molecular, protein, and material design; single-cell modeling; biomedical imaging; time-series modeling; and spatiotemporal modeling (e.g., fluid dynamics, climate).
   apply: |
-    If you would like to work with me, please email your CV, academic transcript, and a brief research statement to
+    If you would like to work with me, please email your **CV**, **academic transcript**, and a brief **research statement** to
     **Dongxia [dot] Wu [at] mbzuai [dot] ac [dot] ae**, using the subject line
-    **[Your Name] — [Position] — [Research Direction(s)] — ATLAS Lab Application**. In your email, please note which of
-    the four directions above best match your interests and why.
+    **[Your Name] — [Position] — [Research Direction(s)] — ATLAS Lab Application**. In your email, please note which
+    research direction(s) above best match your interests and why.
 
 # ----------------------------------------------------------------------
 # Group — current lab members and mentoring history
@@ -211,6 +216,20 @@ group:
 publications:
   papers:
     # ---- Preprints (preprint: true → shown in a separate group) ----
+    - title: "Architecture-Dependent Fusion Pathways in MLLMs"
+      link: "https://arxiv.org/abs/2610.03289"
+      authors: Hebao Zhu, <b>Dongxia Wu</b>.
+      venue: arXiv preprint
+      year: 2026
+      preprint: true
+
+    - title: "PerturbCellRL: Aligning Distributions and Grounding Biology via Post-Training Perturbation Generators"
+      link: "https://arxiv.org/abs/2606.27752"
+      authors: <b>Dongxia Wu</b>, Mingyu Li, Yuhui Zhang, Anurendra Kumar, Emma Lundberg, Serena Yeung-Levy, Emily B. Fox.
+      venue: arXiv preprint
+      year: 2026
+      preprint: true
+
     - title: "BALAR: A Bayesian Agentic Loop for Active Reasoning"
       link: "https://arxiv.org/abs/2605.05386"
       authors: Aymen Echarghaoui, <b>Dongxia Wu</b>, Emily B. Fox.

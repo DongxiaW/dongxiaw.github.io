@@ -85,7 +85,7 @@ p { margin: 0 0 1em; }
 .navbar-links {
   list-style: none;
   display: flex;
-  gap: 26px;
+  gap: 18px;
   margin: 0;
   padding: 0;
 }
@@ -291,6 +291,22 @@ p { margin: 0 0 1em; }
 /* ============================================================
    Prospective students
    ============================================================ */
+.recruiting-timing {
+  display: grid;
+  grid-template-columns: .8fr 1.2fr;
+  gap: 14px;
+}
+.recruiting-option {
+  background: var(--accent-soft);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 16px 20px;
+}
+.recruiting-option p { margin: 0; }
+.recruiting-status { font-size: 18px; font-weight: 700; color: var(--accent-dark); }
+.recruiting-roles { font-size: 15.5px; font-weight: 600; }
+.recruiting-note { font-size: 14px; color: var(--text-soft); padding-top: 4px; }
+.recruiting-areas-intro { font-size: 15.5px; color: var(--text-soft); margin-bottom: 18px; }
 .areas-list {
   list-style: none;
   margin: 0 0 22px;
@@ -312,38 +328,35 @@ p { margin: 0 0 1em; }
   border-radius: var(--radius);
   padding: 16px 20px;
   font-size: 15.5px;
+  overflow-wrap: anywhere;
 }
 .apply-note p:last-child { margin-bottom: 0; }
 
 /* ============================================================
    Openings
    ============================================================ */
-.opening {
-  position: relative;
+.opening-details {
   border: 1px solid var(--border);
   border-radius: var(--radius);
+}
+.opening-details + .opening-details { margin-top: 14px; }
+.opening-details > summary {
+  padding: 16px 20px;
+  cursor: pointer;
+  color: var(--accent-dark);
+}
+.opening-details > summary:hover { background: var(--bg-soft); }
+.opening-details > summary:focus-visible { outline: 2px solid var(--accent); outline-offset: 3px; }
+.opening-details > summary .opening-badge { margin-left: 8px; vertical-align: middle; }
+.opening-details[open] > summary { border-bottom: 1px solid var(--border); }
+.opening {
   background: #fff;
   padding: 26px 26px 24px;
-  overflow: hidden;
-  box-shadow: 0 1px 3px rgba(16, 40, 40, .04);
-}
-.opening::before {
-  content: "";
-  position: absolute;
-  top: 0; left: 0; right: 0;
-  height: 4px;
-  background: linear-gradient(90deg, #19a8a3, var(--accent-dark));
-}
-.opening + .opening { margin-top: 18px; }
-.opening-head {
-  display: flex;
-  align-items: center;
-  flex-wrap: wrap;
-  gap: 8px 12px;
+  border-radius: 0 0 var(--radius) var(--radius);
 }
 .opening-title {
-  font-size: 19px;
-  font-weight: 700;
+  font-size: 15.5px;
+  font-weight: 600;
   color: var(--text);
   margin: 0;
 }
@@ -624,8 +637,10 @@ p { margin: 0 0 1em; }
   .header-photo img { width: 160px; height: 196px; }
 
   .research-grid { grid-template-columns: 1fr; }
+  .recruiting-timing { grid-template-columns: 1fr; }
   .areas-list { grid-template-columns: 1fr; }
   .opening-grid { grid-template-columns: 1fr; gap: 4px; }
+  .opening { padding: 20px 18px; }
 
   .mentee-item { flex-direction: column; gap: 2px; }
   .mentee-years,

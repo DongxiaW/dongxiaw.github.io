@@ -21,7 +21,7 @@ To add a publication, append an entry under `publications.papers` with
 
 ## Structure
 
-- `index.html` — section order (header → news → research → students → publications)
+- `index.html` — section order (header → prospective students → news → research → group → publications); specific openings are expandable within Prospective Students
 - `_layouts/default.html` — page shell
 - `_includes/*.html` — one file per section (`header`, `news`, `research`, `students`, `publications`, `navbar`, `footer`, `scripts`)
 - `assets/css/main.scss` — all styling (teal accent theme, responsive)

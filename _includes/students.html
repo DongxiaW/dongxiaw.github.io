@@ -4,6 +4,20 @@
   <h2 class="section-title">Prospective Students</h2>
   {% if rec.intro %}<div class="section-intro">{{ rec.intro | markdownify }}</div>{% endif %}
 
+  {% if rec.opportunities %}
+  <div class="recruiting-timing">
+    {% for opportunity in rec.opportunities %}
+    <div class="recruiting-option">
+      <p class="recruiting-status">{{ opportunity.status }}</p>
+      <p class="recruiting-roles">{{ opportunity.roles }}</p>
+      {% if opportunity.note %}<p class="recruiting-note">{{ opportunity.note }}</p>{% endif %}
+    </div>
+    {% endfor %}
+  </div>
+  {% endif %}
+
+  <h3 class="subsection-title">Research areas</h3>
+  {% if rec.areas_intro %}<p class="recruiting-areas-intro">{{ rec.areas_intro }}</p>{% endif %}
   <ul class="areas-list">
     {% for area in rec.areas %}
     <li class="area-item">
@@ -13,6 +27,11 @@
     {% endfor %}
   </ul>
 
-  {% if rec.apply %}<div class="apply-note">{{ rec.apply | markdownify }}</div>{% endif %}
+  {% if rec.apply %}
+  <h3 class="subsection-title">How to apply</h3>
+  <div class="apply-note">{{ rec.apply | markdownify }}</div>
+  {% endif %}
+
+  {% include openings.html %}
 </section>
 {% endif %}
