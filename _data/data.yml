@@ -10,7 +10,7 @@ profile:
   name: Dongxia Wu
   chinese_name:   # leave blank to hide
   title: Assistant Professor, MBZUAI
-  subtitle: Statistics and Data Science · Machine Learning
+  subtitle: Division of Computing and Mathematical Sciences
   lab: ATLAS Lab
   lab_full: AI for Trustworthy Learning And Science
   lab_logo: atlas-logo.svg
@@ -29,8 +29,8 @@ profile:
 # Bio / about (rendered in the header, supports markdown links)
 # ----------------------------------------------------------------------
 bio: |
-  I am a **tenure-track Assistant Professor** at [MBZUAI](https://mbzuai.ac.ae/), jointly in the Department of
-  Statistics and Data Science and the Department of Machine Learning, where I lead the **ATLAS Lab**
+  I am a **tenure-track Assistant Professor** at [MBZUAI](https://mbzuai.ac.ae/), in the
+  Division of Computing and Mathematical Sciences, where I lead the **ATLAS Lab**
   (*AI for Trustworthy Learning And Science*).
 
   Previously, I was a postdoctoral scholar at [Stanford University](https://www.stanford.edu/), working with
@@ -137,8 +137,8 @@ research:
 recruiting:
   intro: |
     **The ATLAS Lab at MBZUAI is recruiting!** I am looking for highly motivated **PhD students, master's students,
-    postdocs, research assistants (RAs), and visiting students**, and I recruit from both the Department of Statistics
-    and Data Science and the Department of Machine Learning. **PhD positions begin in Fall 2027**; postdoc, master's,
+    postdocs, research assistants (RAs), and visiting students**, and I recruit from the Division of Computing
+    and Mathematical Sciences. **PhD positions begin in Fall 2027**; postdoc, master's,
     RA, and visiting positions are **open now**, with flexible start dates. I am especially interested in candidates
     working across these areas:
   areas:
@@ -211,13 +211,6 @@ group:
 publications:
   papers:
     # ---- Preprints (preprint: true → shown in a separate group) ----
-    - title: "Calibrating LLMs with Semantic-level Reward"
-      link: "https://arxiv.org/abs/2605.15588"
-      authors: Fengfei Yu, Ruijia Niu, <b>Dongxia Wu</b>, Yi-An Ma, Rose Yu.
-      venue: arXiv preprint
-      year: 2026
-      preprint: true
-
     - title: "BALAR: A Bayesian Agentic Loop for Active Reasoning"
       link: "https://arxiv.org/abs/2605.05386"
       authors: Aymen Echarghaoui, <b>Dongxia Wu</b>, Emily B. Fox.
@@ -233,6 +226,12 @@ publications:
       preprint: true
 
     # ---- Published ----
+    - title: "Calibrating LLMs with Semantic-level Reward"
+      link: "https://arxiv.org/abs/2605.15588"
+      authors: Fengfei Yu, Ruijia Niu, <b>Dongxia Wu</b>, Yi-An Ma, Rose Yu.
+      venue: Conference on Neural Information Processing Systems (NeurIPS)
+      year: 2026
+
     - title: "CellFluxRL: Biologically-Constrained Virtual Cell Modeling via Reinforcement Learning"
       link: "https://arxiv.org/abs/2603.21743"
       authors: <b>Dongxia Wu</b>, Shiye Su, Yuhui Zhang, Elaine Sui, Emma Lundberg, Emily B. Fox, Serena Yeung-Levy.
